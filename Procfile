@@ -1,1 +1,1 @@
-worker: node bot.js
+worker: node ms7.js
