@@ -12,7 +12,6 @@ client.on('message', message => {
 		if (message.content === 'مسح') {
 			message.channel.fetchMessages().then(messages => messages.forEach(msg => msg.delete()));
 		} else if (message.content.match(/\/clear \d+/)) {
-			var limit = message.content.match(/\/clear (\d+)/)[1] + 1;
 			message.channel.fetchMessages({limit: limit}).then(messages => messages.forEach(msg => msg.delete()));
 		}
 	} else {
