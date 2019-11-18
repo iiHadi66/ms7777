@@ -1,6 +1,6 @@
 
-const fs = require ("fs");
-const Discord  = require('discord.js');
+const Discord = require('discord.js');
+const client = new Discord.Client();
 			client   = new Discord.Client()
 
 client.on('ready', () => {
