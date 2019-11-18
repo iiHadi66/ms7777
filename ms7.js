@@ -12,7 +12,8 @@ client.on('message', message => {
 		if (message.content === 'clear') {
 			message.channel.fetchMessages().then(messages => messages.forEach(msg => msg.delete()));
 		} else if (message.content.match(//clear \d+/)) {
-			      message.channel.fetchMessages({limit: limit}).then(messages => messages.forEach(msg => msg.delete()));
+			       message.channel.fetchMessages({limit: limit}).then(messages => messages.forEach(msg => msg.delete()));
+
 		}
 	} else {
 
